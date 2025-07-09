@@ -74,7 +74,7 @@ public class DbcReadFileTest {
             String kcd = filename.replaceAll("dbc", "kcd");
             File fkcd = new File(kcd);
 
-            if (reader.parseFile(fdbc, System.out)) {
+            if (reader.parseFile(fdbc, System.out, null)) {
                 reader.writeKcdFile(fkcd, true, false);
 
                 StreamSource source = new StreamSource(fkcd);
